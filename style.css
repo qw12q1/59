@@ -1,0 +1,102 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #a64bf4, #f78ad0);
+  color: white;
+  text-align: center;
+}
+header {
+  padding: 20px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.logo {
+  height: 40px;
+}
+.brand-name {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.subtitle {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#buy-button {
+  display: block;
+  margin: 0 auto 18px auto;
+  background-color: #f78ad0;
+  color: white;
+  padding: 14px 36px;
+  width: auto;
+  max-width: 200px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+#buy-button:hover {
+  background-color: #f3a1d5;
+}
+main {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+.box {
+  width: 40%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  box-sizing: border-box;
+  min-height: 360px;
+}
+.center-text {
+  text-align: center;
+}
+.submit-box p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin: 0;
+}
+.chart-box {
+  width: auto;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+footer {
+  padding: 20px;
+}
+.nfts img {
+  width: 100px;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+.social-text {
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+
+.buy-button {
+    width: auto !important;
+    max-width: 200px;
+    padding: 12px 24px;
+    margin: 0 auto;
+    display: block;
+}
