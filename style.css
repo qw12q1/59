@@ -135,26 +135,26 @@ body.gradient-background {
 
 /* 菜单按钮样式 */
 .menu-button {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    z-index: 1000;
+  position: absolute;
+  top: 20px;
+  right: calc((100% - 960px) / 2); /* 对齐内容模块右边缘 */
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  z-index: 1000;
 }
 
 /* 菜单下拉样式 */
 .dropdown-content {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    background-color: white;
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 999;
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: calc((100% - 960px) / 2); /* 精准对齐菜单按钮 */
+  background: linear-gradient(135deg, #eecbf4, #c8b6ff);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 5px;
 }
 
 .dropdown-content a {
@@ -172,15 +172,15 @@ body.gradient-background {
 
 /* 渐变菜单背景颜色替代原白底 */
 .dropdown-content {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    background: linear-gradient(135deg, #eecbf4, #c8b6ff);
-    min-width: 120px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 999;
-    border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: calc((100% - 960px) / 2); /* 精准对齐菜单按钮 */
+  background: linear-gradient(135deg, #eecbf4, #c8b6ff);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 5px;
 }
 
 
@@ -197,29 +197,46 @@ body.gradient-background {
 
 /* 调整菜单按钮位置使其与内容模块右边对齐 */
 .menu-button {
-    position: fixed;
-    top: 20px;
-    right: 80px; /* 从20px改为80px，向左移动 */
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    z-index: 1000;
+  position: absolute;
+  top: 20px;
+  right: calc((100% - 960px) / 2); /* 对齐内容模块右边缘 */
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  z-index: 1000;
 }
 
 
 /* 精准对齐主模块右边缘：页面中心 - 480px */
 .menu-button {
-    position: fixed;
-    top: 20px;
-    right: calc(50% - 480px);
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    z-index: 1000;
+  position: absolute;
+  top: 20px;
+  right: calc((100% - 960px) / 2); /* 对齐内容模块右边缘 */
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  z-index: 1000;
 }
 
 
 /* 菜单内容位置与按钮对齐 */
 .dropdown-content {
-    right: calc(50% - 480px); /* 同步对齐按钮位置 */
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: calc((100% - 960px) / 2); /* 精准对齐菜单按钮 */
+  background: linear-gradient(135deg, #eecbf4, #c8b6ff);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 5px;
+}
+
+@media (max-width: 960px) {
+  .menu-button {
+    right: 20px;
+  }
+  .dropdown-content {
+    right: 20px;
+  }
 }
