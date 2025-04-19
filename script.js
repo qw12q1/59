@@ -1,3 +1,5 @@
-document.getElementById("buy-button").addEventListener("click", () => {
-  
+
+document.querySelector('.menu-button').addEventListener('click', () => {
+  const dropdown = document.getElementById('dropdown-menu');
+  dropdown.classList.toggle('show');
 });

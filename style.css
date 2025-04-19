@@ -240,3 +240,24 @@ body.gradient-background {
     right: 20px;
   }
 }
+
+
+/* 动画过渡和初始隐藏状态 */
+.dropdown-content {
+  transition: all 0.3s ease;
+  transform: scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 显示状态类 */
+.dropdown-content.show {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* 悬浮高亮效果 */
+.dropdown-content a:hover {
+  background-color: #eecbf4;
+}
