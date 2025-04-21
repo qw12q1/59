@@ -1,18 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About BABE</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About BABE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #1e1e2f, #2e2e48);
+      color: white;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .module {
+      background: #292943;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+    a {
+      color: #ff87e5;
+      text-decoration: none;
+    }
+    a.back {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #ccc;
+      font-size: 14px;
+    }
+    h1 {
+      margin-top: 0;
+    }
+  </style>
 </head>
-<body class="gradient-background">
-    <div class="nav"><a href="index.html" class="back-button">&larr; Back to Home</a></div>
-    <div class="content">
-        <h1>About BABE</h1>
-        <p>BABE is a blockchain-based female-themed token representing freedom, beauty, and technology. 
-        The project aims to empower women economically through NFTs, community rewards, and social engagement, 
-        while promoting brand outreach.</p>
+<body>
+  <div class="container">
+    <div class="module">
+      <a class="back" href="index.html">&larr; Back to Home</a>
+  <div class="content-box">
+    
+    <p>
+      BABE is a blockchain-based female-themed token representing freedom, beauty, and technology.
+      The project aims to empower women economically through NFTs, community rewards, and social
+      engagement, while promoting brand outreach.
+    </p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+  <script>
+    VANTA.WAVES({
+      el: "body",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      color: 0xff00ff,
+      shininess: 50.00,
+      waveHeight: 20.00,
+      waveSpeed: 1.0,
+      zoom: 1.0
+    })
+  </script>
     </div>
-</body>
-</html>
+  </div>
+</body></html>
